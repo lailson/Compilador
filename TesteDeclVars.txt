@@ -1,0 +1,8 @@
+PROGRAMA teste;
+	
+	inteiro a,b;
+	string c;
+	booleano d;
+	string e,f,g;
+	
+FIM .
