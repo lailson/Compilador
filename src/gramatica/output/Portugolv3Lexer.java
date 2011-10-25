@@ -1,6 +1,7 @@
-// $ANTLR 3.3 Nov 30, 2010 12:45:30 /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g 2011-10-05 11:36:39
+// $ANTLR 3.3 Nov 30, 2010 12:45:30 /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g 2011-10-17 15:46:17
 
 package Gramatica;
+
 
 
 import org.antlr.runtime.*;
@@ -80,15 +81,15 @@ public class Portugolv3Lexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "/Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g"; }
+    public String getGrammarFileName() { return "/Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g"; }
 
     // $ANTLR start "ENTAO"
     public final void mENTAO() throws RecognitionException {
         try {
             int _type = ENTAO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:11:7: ( 'ENTAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:11:9: 'ENTAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:12:7: ( 'ENTAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:12:9: 'ENTAO'
             {
             match("ENTAO"); 
 
@@ -108,8 +109,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = SENAO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:12:7: ( 'SENAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:12:9: 'SENAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:13:7: ( 'SENAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:13:9: 'SENAO'
             {
             match("SENAO"); 
 
@@ -129,8 +130,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = SE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:13:4: ( 'SE' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:13:6: 'SE'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:14:4: ( 'SE' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:14:6: 'SE'
             {
             match("SE"); 
 
@@ -150,8 +151,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = COMANDOS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:14:10: ( 'COMANDOS' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:14:12: 'COMANDOS'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:15:10: ( 'COMANDOS' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:15:12: 'COMANDOS'
             {
             match("COMANDOS"); 
 
@@ -171,8 +172,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = VARIAVEIS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:15:11: ( 'VARIAVEIS' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:15:13: 'VARIAVEIS'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:16:11: ( 'VARIAVEIS' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:16:13: 'VARIAVEIS'
             {
             match("VARIAVEIS"); 
 
@@ -192,8 +193,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = FUNCOES;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:16:9: ( 'FUNCOES' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:16:11: 'FUNCOES'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:17:9: ( 'FUNCOES' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:17:11: 'FUNCOES'
             {
             match("FUNCOES"); 
 
@@ -213,8 +214,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = LISTAPARAMETROS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:17:17: ( 'LISTAPARAMETROS' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:17:19: 'LISTAPARAMETROS'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:18:17: ( 'LISTAPARAMETROS' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:18:19: 'LISTAPARAMETROS'
             {
             match("LISTAPARAMETROS"); 
 
@@ -234,8 +235,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = TIPORETORNO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:18:13: ( 'TIPORETORNO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:18:15: 'TIPORETORNO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:19:13: ( 'TIPORETORNO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:19:15: 'TIPORETORNO'
             {
             match("TIPORETORNO"); 
 
@@ -255,8 +256,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = CORPOFUNCAO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:19:13: ( 'CORPOFUNCAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:19:15: 'CORPOFUNCAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:20:13: ( 'CORPOFUNCAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:20:15: 'CORPOFUNCAO'
             {
             match("CORPOFUNCAO"); 
 
@@ -276,8 +277,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = LEIA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:20:6: ( 'LEIA' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:20:8: 'LEIA'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:21:6: ( 'LEIA' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:21:8: 'LEIA'
             {
             match("LEIA"); 
 
@@ -297,8 +298,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = FIM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:21:5: ( 'FIM' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:21:7: 'FIM'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:22:5: ( 'FIM' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:22:7: 'FIM'
             {
             match("FIM"); 
 
@@ -318,8 +319,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = IMPRIMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:22:9: ( 'IMPRIMA' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:22:11: 'IMPRIMA'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:23:9: ( 'IMPRIMA' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:23:11: 'IMPRIMA'
             {
             match("IMPRIMA"); 
 
@@ -339,8 +340,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = ENQUANTO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:23:10: ( 'ENQUANTO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:23:12: 'ENQUANTO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:24:10: ( 'ENQUANTO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:24:12: 'ENQUANTO'
             {
             match("ENQUANTO"); 
 
@@ -360,8 +361,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = PASSO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:24:7: ( 'PASSO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:24:9: 'PASSO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:25:7: ( 'PASSO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:25:9: 'PASSO'
             {
             match("PASSO"); 
 
@@ -381,8 +382,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = CONDICAO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:25:10: ( 'CONDICAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:25:12: 'CONDICAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:26:10: ( 'CONDICAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:26:12: 'CONDICAO'
             {
             match("CONDICAO"); 
 
@@ -402,8 +403,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = ATRIBUICAO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:26:12: ( 'ATRIBUICAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:26:14: 'ATRIBUICAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:27:12: ( 'ATRIBUICAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:27:14: 'ATRIBUICAO'
             {
             match("ATRIBUICAO"); 
 
@@ -423,8 +424,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = PARA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:27:6: ( 'PARA' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:27:8: 'PARA'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:28:6: ( 'PARA' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:28:8: 'PARA'
             {
             match("PARA"); 
 
@@ -444,8 +445,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = CHAMADAFUNCAO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:28:15: ( 'CHAMADAFUNCAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:28:17: 'CHAMADAFUNCAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:29:15: ( 'CHAMADAFUNCAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:29:17: 'CHAMADAFUNCAO'
             {
             match("CHAMADAFUNCAO"); 
 
@@ -465,8 +466,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:29:7: ( 'PROGRAMA' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:29:9: 'PROGRAMA'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:30:7: ( 'PROGRAMA' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:30:9: 'PROGRAMA'
             {
             match("PROGRAMA"); 
 
@@ -486,8 +487,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:30:7: ( ';' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:30:9: ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:31:7: ( ';' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:31:9: ';'
             {
             match(';'); 
 
@@ -506,8 +507,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:31:7: ( '.' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:31:9: '.'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:32:7: ( '.' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:32:9: '.'
             {
             match('.'); 
 
@@ -526,8 +527,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:32:7: ( 'INTEIRO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:32:9: 'INTEIRO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:33:7: ( 'INTEIRO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:33:9: 'INTEIRO'
             {
             match("INTEIRO"); 
 
@@ -547,8 +548,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:33:7: ( 'STRING' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:33:9: 'STRING'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:34:7: ( 'STRING' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:34:9: 'STRING'
             {
             match("STRING"); 
 
@@ -568,8 +569,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:34:7: ( 'BOOLEANO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:34:9: 'BOOLEANO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:35:7: ( 'BOOLEANO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:35:9: 'BOOLEANO'
             {
             match("BOOLEANO"); 
 
@@ -589,8 +590,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:35:7: ( 'VOID' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:35:9: 'VOID'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:36:7: ( 'VOID' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:36:9: 'VOID'
             {
             match("VOID"); 
 
@@ -610,8 +611,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:36:7: ( ',' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:36:9: ','
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:37:7: ( ',' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:37:9: ','
             {
             match(','); 
 
@@ -630,8 +631,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:37:7: ( 'FUNCAO' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:37:9: 'FUNCAO'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:38:7: ( 'FUNCAO' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:38:9: 'FUNCAO'
             {
             match("FUNCAO"); 
 
@@ -651,8 +652,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:38:7: ( '(' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:38:9: '('
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:39:7: ( '(' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:39:9: '('
             {
             match('('); 
 
@@ -671,8 +672,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:39:7: ( ')' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:39:9: ')'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:40:7: ( ')' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:40:9: ')'
             {
             match(')'); 
 
@@ -691,8 +692,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:40:7: ( ':' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:40:9: ':'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:41:7: ( ':' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:41:9: ':'
             {
             match(':'); 
 
@@ -711,8 +712,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:41:7: ( 'SAIR' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:41:9: 'SAIR'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:42:7: ( 'SAIR' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:42:9: 'SAIR'
             {
             match("SAIR"); 
 
@@ -732,8 +733,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:42:7: ( '=' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:42:9: '='
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:43:7: ( '=' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:43:9: '='
             {
             match('='); 
 
@@ -752,8 +753,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:43:7: ( 'ATE' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:43:9: 'ATE'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:44:7: ( 'ATE' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:44:9: 'ATE'
             {
             match("ATE"); 
 
@@ -773,8 +774,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:44:7: ( '||' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:44:9: '||'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:45:7: ( '||' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:45:9: '||'
             {
             match("||"); 
 
@@ -794,8 +795,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:45:7: ( '&&' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:45:9: '&&'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:46:7: ( '&&' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:46:9: '&&'
             {
             match("&&"); 
 
@@ -815,8 +816,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:46:7: ( '==' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:46:9: '=='
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:47:7: ( '==' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:47:9: '=='
             {
             match("=="); 
 
@@ -836,8 +837,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:47:7: ( '!=' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:47:9: '!='
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:48:7: ( '!=' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:48:9: '!='
             {
             match("!="); 
 
@@ -857,8 +858,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:48:7: ( '>' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:48:9: '>'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:49:7: ( '>' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:49:9: '>'
             {
             match('>'); 
 
@@ -877,8 +878,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:49:7: ( '<' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:49:9: '<'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:50:7: ( '<' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:50:9: '<'
             {
             match('<'); 
 
@@ -897,8 +898,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:50:7: ( '>=' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:50:9: '>='
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:51:7: ( '>=' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:51:9: '>='
             {
             match(">="); 
 
@@ -918,8 +919,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:51:7: ( '<=' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:51:9: '<='
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:52:7: ( '<=' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:52:9: '<='
             {
             match("<="); 
 
@@ -939,8 +940,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:52:7: ( '+' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:52:9: '+'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:53:7: ( '+' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:53:9: '+'
             {
             match('+'); 
 
@@ -959,8 +960,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:53:7: ( '-' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:53:9: '-'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:54:7: ( '-' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:54:9: '-'
             {
             match('-'); 
 
@@ -979,8 +980,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:54:7: ( '*' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:54:9: '*'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:55:7: ( '*' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:55:9: '*'
             {
             match('*'); 
 
@@ -999,8 +1000,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:55:7: ( '/' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:55:9: '/'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:56:7: ( '/' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:56:9: '/'
             {
             match('/'); 
 
@@ -1019,8 +1020,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:7: ( '!' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:9: '!'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:57:7: ( '!' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:57:9: '!'
             {
             match('!'); 
 
@@ -1039,8 +1040,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:57:7: ( '^' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:57:9: '^'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:7: ( '^' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:9: '^'
             {
             match('^'); 
 
@@ -1059,8 +1060,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:58:7: ( 'true' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:58:9: 'true'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:59:7: ( 'true' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:59:9: 'true'
             {
             match("true"); 
 
@@ -1080,8 +1081,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:59:7: ( 'false' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:59:9: 'false'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:60:7: ( 'false' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:60:9: 'false'
             {
             match("false"); 
 
@@ -1101,8 +1102,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:203:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:203:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:205:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:205:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -1113,7 +1114,7 @@ public class Portugolv3Lexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:203:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:205:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -1126,7 +1127,7 @@ public class Portugolv3Lexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:
             	    {
             	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
             	        input.consume();
@@ -1162,10 +1163,10 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:206:5: ( ( '0' .. '9' )+ )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:206:7: ( '0' .. '9' )+
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:208:5: ( ( '0' .. '9' )+ )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:208:7: ( '0' .. '9' )+
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:206:7: ( '0' .. '9' )+
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:208:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -1179,7 +1180,7 @@ public class Portugolv3Lexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:206:7: '0' .. '9'
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:208:7: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1211,8 +1212,8 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:209:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:209:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:211:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:211:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1240,7 +1241,7 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:217:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:219:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1268,11 +1269,11 @@ public class Portugolv3Lexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:217:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:219:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:217:14: (~ ( '\\n' | '\\r' ) )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:219:14: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -1285,7 +1286,7 @@ public class Portugolv3Lexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:217:14: ~ ( '\\n' | '\\r' )
+                    	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:219:14: ~ ( '\\n' | '\\r' )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1305,7 +1306,7 @@ public class Portugolv3Lexer extends Lexer {
                         }
                     } while (true);
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:217:28: ( '\\r' )?
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:219:28: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -1314,7 +1315,7 @@ public class Portugolv3Lexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:217:28: '\\r'
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:219:28: '\\r'
                             {
                             match('\r'); 
 
@@ -1329,11 +1330,11 @@ public class Portugolv3Lexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:218:9: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:220:9: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:218:14: ( options {greedy=false; } : . )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:220:14: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -1358,7 +1359,7 @@ public class Portugolv3Lexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:218:42: .
+                    	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:220:42: .
                     	    {
                     	    matchAny(); 
 
@@ -1391,11 +1392,11 @@ public class Portugolv3Lexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:222:5: ( '\"' ( ESC_SEQ | ~ ( '\\\\' | '\"' ) )* '\"' )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:222:8: '\"' ( ESC_SEQ | ~ ( '\\\\' | '\"' ) )* '\"'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:224:5: ( '\"' ( ESC_SEQ | ~ ( '\\\\' | '\"' ) )* '\"' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:224:8: '\"' ( ESC_SEQ | ~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:222:12: ( ESC_SEQ | ~ ( '\\\\' | '\"' ) )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:224:12: ( ESC_SEQ | ~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -1411,14 +1412,14 @@ public class Portugolv3Lexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:222:14: ESC_SEQ
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:224:14: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
             	    }
             	    break;
             	case 2 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:222:24: ~ ( '\\\\' | '\"' )
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:224:24: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1453,8 +1454,8 @@ public class Portugolv3Lexer extends Lexer {
     // $ANTLR start "HEX_DIGIT"
     public final void mHEX_DIGIT() throws RecognitionException {
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:226:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:226:13: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:228:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:228:13: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )
             {
             if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='F')||(input.LA(1)>='a' && input.LA(1)<='f') ) {
                 input.consume();
@@ -1477,7 +1478,7 @@ public class Portugolv3Lexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:230:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | OCTAL_ESC )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:232:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | OCTAL_ESC )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1505,7 +1506,7 @@ public class Portugolv3Lexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:230:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:232:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
                     if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -1521,7 +1522,7 @@ public class Portugolv3Lexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:232:9: OCTAL_ESC
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:234:9: OCTAL_ESC
                     {
                     mOCTAL_ESC(); 
 
@@ -1538,7 +1539,7 @@ public class Portugolv3Lexer extends Lexer {
     // $ANTLR start "OCTAL_ESC"
     public final void mOCTAL_ESC() throws RecognitionException {
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt9=3;
             int LA9_0 = input.LA(1);
 
@@ -1584,25 +1585,25 @@ public class Portugolv3Lexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:14: ( '0' .. '3' )
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:15: '0' .. '3'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:14: ( '0' .. '3' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:15: '0' .. '3'
                     {
                     matchRange('0','3'); 
 
                     }
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:25: ( '0' .. '7' )
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:26: '0' .. '7'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:25: ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:36: ( '0' .. '7' )
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:237:37: '0' .. '7'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:36: ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:239:37: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -1612,18 +1613,18 @@ public class Portugolv3Lexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:238:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:240:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:238:14: ( '0' .. '7' )
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:238:15: '0' .. '7'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:240:14: ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:240:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
                     }
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:238:25: ( '0' .. '7' )
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:238:26: '0' .. '7'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:240:25: ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:240:26: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -1633,11 +1634,11 @@ public class Portugolv3Lexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:239:9: '\\\\' ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:241:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:239:14: ( '0' .. '7' )
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:239:15: '0' .. '7'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:241:14: ( '0' .. '7' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:241:15: '0' .. '7'
                     {
                     matchRange('0','7'); 
 
@@ -1657,8 +1658,8 @@ public class Portugolv3Lexer extends Lexer {
     // $ANTLR start "UNICODE_ESC"
     public final void mUNICODE_ESC() throws RecognitionException {
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:244:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:244:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:246:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:246:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
             {
             match('\\'); 
             match('u'); 
@@ -1676,383 +1677,383 @@ public class Portugolv3Lexer extends Lexer {
     // $ANTLR end "UNICODE_ESC"
 
     public void mTokens() throws RecognitionException {
-        // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:8: ( ENTAO | SENAO | SE | COMANDOS | VARIAVEIS | FUNCOES | LISTAPARAMETROS | TIPORETORNO | CORPOFUNCAO | LEIA | FIM | IMPRIMA | ENQUANTO | PASSO | CONDICAO | ATRIBUICAO | PARA | CHAMADAFUNCAO | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | ID | INT | WS | COMMENT | STRING )
+        // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:8: ( ENTAO | SENAO | SE | COMANDOS | VARIAVEIS | FUNCOES | LISTAPARAMETROS | TIPORETORNO | CORPOFUNCAO | LEIA | FIM | IMPRIMA | ENQUANTO | PASSO | CONDICAO | ATRIBUICAO | PARA | CHAMADAFUNCAO | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | T__37 | T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | T__59 | T__60 | T__61 | ID | INT | WS | COMMENT | STRING )
         int alt10=54;
         alt10 = dfa10.predict(input);
         switch (alt10) {
             case 1 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:10: ENTAO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:10: ENTAO
                 {
                 mENTAO(); 
 
                 }
                 break;
             case 2 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:16: SENAO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:16: SENAO
                 {
                 mSENAO(); 
 
                 }
                 break;
             case 3 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:22: SE
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:22: SE
                 {
                 mSE(); 
 
                 }
                 break;
             case 4 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:25: COMANDOS
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:25: COMANDOS
                 {
                 mCOMANDOS(); 
 
                 }
                 break;
             case 5 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:34: VARIAVEIS
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:34: VARIAVEIS
                 {
                 mVARIAVEIS(); 
 
                 }
                 break;
             case 6 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:44: FUNCOES
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:44: FUNCOES
                 {
                 mFUNCOES(); 
 
                 }
                 break;
             case 7 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:52: LISTAPARAMETROS
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:52: LISTAPARAMETROS
                 {
                 mLISTAPARAMETROS(); 
 
                 }
                 break;
             case 8 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:68: TIPORETORNO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:68: TIPORETORNO
                 {
                 mTIPORETORNO(); 
 
                 }
                 break;
             case 9 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:80: CORPOFUNCAO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:80: CORPOFUNCAO
                 {
                 mCORPOFUNCAO(); 
 
                 }
                 break;
             case 10 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:92: LEIA
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:92: LEIA
                 {
                 mLEIA(); 
 
                 }
                 break;
             case 11 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:97: FIM
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:97: FIM
                 {
                 mFIM(); 
 
                 }
                 break;
             case 12 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:101: IMPRIMA
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:101: IMPRIMA
                 {
                 mIMPRIMA(); 
 
                 }
                 break;
             case 13 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:109: ENQUANTO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:109: ENQUANTO
                 {
                 mENQUANTO(); 
 
                 }
                 break;
             case 14 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:118: PASSO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:118: PASSO
                 {
                 mPASSO(); 
 
                 }
                 break;
             case 15 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:124: CONDICAO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:124: CONDICAO
                 {
                 mCONDICAO(); 
 
                 }
                 break;
             case 16 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:133: ATRIBUICAO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:133: ATRIBUICAO
                 {
                 mATRIBUICAO(); 
 
                 }
                 break;
             case 17 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:144: PARA
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:144: PARA
                 {
                 mPARA(); 
 
                 }
                 break;
             case 18 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:149: CHAMADAFUNCAO
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:149: CHAMADAFUNCAO
                 {
                 mCHAMADAFUNCAO(); 
 
                 }
                 break;
             case 19 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:163: T__31
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:163: T__31
                 {
                 mT__31(); 
 
                 }
                 break;
             case 20 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:169: T__32
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:169: T__32
                 {
                 mT__32(); 
 
                 }
                 break;
             case 21 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:175: T__33
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:175: T__33
                 {
                 mT__33(); 
 
                 }
                 break;
             case 22 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:181: T__34
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:181: T__34
                 {
                 mT__34(); 
 
                 }
                 break;
             case 23 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:187: T__35
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:187: T__35
                 {
                 mT__35(); 
 
                 }
                 break;
             case 24 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:193: T__36
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:193: T__36
                 {
                 mT__36(); 
 
                 }
                 break;
             case 25 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:199: T__37
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:199: T__37
                 {
                 mT__37(); 
 
                 }
                 break;
             case 26 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:205: T__38
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:205: T__38
                 {
                 mT__38(); 
 
                 }
                 break;
             case 27 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:211: T__39
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:211: T__39
                 {
                 mT__39(); 
 
                 }
                 break;
             case 28 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:217: T__40
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:217: T__40
                 {
                 mT__40(); 
 
                 }
                 break;
             case 29 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:223: T__41
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:223: T__41
                 {
                 mT__41(); 
 
                 }
                 break;
             case 30 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:229: T__42
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:229: T__42
                 {
                 mT__42(); 
 
                 }
                 break;
             case 31 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:235: T__43
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:235: T__43
                 {
                 mT__43(); 
 
                 }
                 break;
             case 32 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:241: T__44
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:241: T__44
                 {
                 mT__44(); 
 
                 }
                 break;
             case 33 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:247: T__45
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:247: T__45
                 {
                 mT__45(); 
 
                 }
                 break;
             case 34 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:253: T__46
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:253: T__46
                 {
                 mT__46(); 
 
                 }
                 break;
             case 35 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:259: T__47
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:259: T__47
                 {
                 mT__47(); 
 
                 }
                 break;
             case 36 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:265: T__48
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:265: T__48
                 {
                 mT__48(); 
 
                 }
                 break;
             case 37 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:271: T__49
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:271: T__49
                 {
                 mT__49(); 
 
                 }
                 break;
             case 38 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:277: T__50
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:277: T__50
                 {
                 mT__50(); 
 
                 }
                 break;
             case 39 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:283: T__51
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:283: T__51
                 {
                 mT__51(); 
 
                 }
                 break;
             case 40 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:289: T__52
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:289: T__52
                 {
                 mT__52(); 
 
                 }
                 break;
             case 41 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:295: T__53
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:295: T__53
                 {
                 mT__53(); 
 
                 }
                 break;
             case 42 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:301: T__54
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:301: T__54
                 {
                 mT__54(); 
 
                 }
                 break;
             case 43 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:307: T__55
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:307: T__55
                 {
                 mT__55(); 
 
                 }
                 break;
             case 44 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:313: T__56
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:313: T__56
                 {
                 mT__56(); 
 
                 }
                 break;
             case 45 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:319: T__57
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:319: T__57
                 {
                 mT__57(); 
 
                 }
                 break;
             case 46 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:325: T__58
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:325: T__58
                 {
                 mT__58(); 
 
                 }
                 break;
             case 47 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:331: T__59
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:331: T__59
                 {
                 mT__59(); 
 
                 }
                 break;
             case 48 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:337: T__60
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:337: T__60
                 {
                 mT__60(); 
 
                 }
                 break;
             case 49 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:343: T__61
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:343: T__61
                 {
                 mT__61(); 
 
                 }
                 break;
             case 50 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:349: ID
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:349: ID
                 {
                 mID(); 
 
                 }
                 break;
             case 51 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:352: INT
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:352: INT
                 {
                 mINT(); 
 
                 }
                 break;
             case 52 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:356: WS
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:356: WS
                 {
                 mWS(); 
 
                 }
                 break;
             case 53 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:359: COMMENT
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:359: COMMENT
                 {
                 mCOMMENT(); 
 
                 }
                 break;
             case 54 :
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:1:367: STRING
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:1:367: STRING
                 {
                 mSTRING(); 
 

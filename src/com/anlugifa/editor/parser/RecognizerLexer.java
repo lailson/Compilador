@@ -34,8 +34,8 @@ public RecognizerLexer(InputBuffer ib) {
 }
 public RecognizerLexer(LexerSharedInputState state) {
 	super(state);
-	caseSensitiveLiterals = true;
-	setCaseSensitive(true);
+	caseSensitiveLiterals = false;
+	setCaseSensitive(false);
 	literals = new Hashtable();
 	
 	

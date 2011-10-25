@@ -53,14 +53,14 @@ public class JAbout extends JDialog
             gridBagConstraints11.insets = new Insets(5, 5, 5, 5);
             gridBagConstraints11.gridy = 3;
             lblHome = new JLabel();
-            lblHome.setText("Home: http://sourceforge.net/projects/highlighter");
+            lblHome.setText("Lailson, Anderson e Salomão");
             GridBagConstraints gridBagConstraints2 = new GridBagConstraints();
             gridBagConstraints2.gridx = 0;
             gridBagConstraints2.insets = new Insets(5, 5, 5, 5);
             gridBagConstraints2.fill = GridBagConstraints.HORIZONTAL;
             gridBagConstraints2.gridy = 2;
             lblDate = new JLabel();
-            lblDate.setText("December, 23th of 2006 ");
+            lblDate.setText("Grupo: ");
             GridBagConstraints gridBagConstraints1 = new GridBagConstraints();
             gridBagConstraints1.gridx = 0;
             gridBagConstraints1.anchor = GridBagConstraints.WEST;
@@ -76,7 +76,7 @@ public class JAbout extends JDialog
             gridBagConstraints.anchor = GridBagConstraints.WEST;
             gridBagConstraints.gridy = 0;
             lblName = new JLabel();
-            lblName.setText("Highlight Code Editor");
+            lblName.setText("Compilador");
             jContentPane = new JPanel();
             jContentPane.setLayout(new GridBagLayout());
             jContentPane.add(lblName, gridBagConstraints);

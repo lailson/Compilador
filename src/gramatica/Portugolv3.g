@@ -32,24 +32,72 @@ CHAMADAFUNCAO='CHAMADAFUNCAO';
 
 @header {
 package Gramatica;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
-
+	import java.util.HashMap;
+	import java.util.Iterator;
+	import java.util.ArrayList;
+	import java.util.List;
+	import java.util.StringTokenizer;
+	import java.util.Stack;
 }
 
 @lexer::header{
-package Gramatica;
+	package Gramatica;
+	import java.io.BufferedReader;
+	import java.io.BufferedWriter;
+	import java.io.File;
+	import java.io.FileWriter;
+	import java.util.Scanner;
 }
 
 
 
 @members{
 //Tabela de simbolos
-public HashMap<String,Simbolo> tabelaSimbolos = new HashMap<String,Simbolo>();
-
+	public HashMap<String,Simbolo> tabelaSimbolos = new HashMap<String,Simbolo>();
+	Stack<Erros> meusErros = new Stack();
+    	public String getErrorMessage(RecognitionException e,
+        String[] tokenNames) {
+        List stack = getRuleInvocationStack(e, this.getClass().getName());
+        String msg = null;
+        if (e instanceof NoViableAltException) {
+            NoViableAltException nvae = (NoViableAltException) e;
+            msg = " Sem alternativa Visivel; Linha=" + e.line + "Coluna: " + e.charPositionInLine;
+            meusErros.push(new Erros(e.line,e.charPositionInLine,nvae.input.index(),msg));
+        } else if (e instanceof MismatchedTokenException) {
+            MismatchedTokenException nvae = (MismatchedTokenException) e;
+            msg = " Linha: "+ e.line+":"+e.charPositionInLine+" Esperado " + tokenNames[nvae.expecting] + " Mas encontrado: " + tokenNames[nvae.c];
+            meusErros.push(new Erros(e.line,e.charPositionInLine,nvae.input.index(),msg));      
+        } else if (e instanceof RecognitionException) {
+            RecognitionException nvae = (RecognitionException) e;
+            meusErros.push(new Erros(e.line,e.charPositionInLine,nvae.input.index(),msg));            
+        }
+        else {
+            msg = super.getErrorMessage(e, tokenNames);
+            meusErros.push(new Erros(e.line,e.charPositionInLine,e.input.index(),msg));
+        }
+        //return stack+" "+msg;
+        try {
+                File erro = new File("erro.e");
+                String conteudo = "";
+                if (erro.exists()) {
+                    Scanner input = new Scanner(erro);
+                    while (input.hasNext()) {
+                        conteudo = conteudo + input.nextLine() + "\n";
+                    }
+                    input.close();
+                }
+                BufferedWriter erros = new BufferedWriter(new FileWriter(erro));
+                erros.write(msg+"\n"+conteudo);
+                erros.flush();
+                erros.close();
+                
+            } catch (Exception i) {
+            }
+        return msg;
+    }
+    // public String getTokenErrorDisplay(Token t) {
+    // 	return t.toString();
+    //}
 }
 
 

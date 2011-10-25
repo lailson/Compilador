@@ -1,4 +1,4 @@
-// $ANTLR 3.3 Nov 30, 2010 12:45:30 /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g 2011-10-05 11:36:39
+// $ANTLR 3.3 Nov 30, 2010 12:45:30 /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g 2011-10-17 15:46:17
 
 package Gramatica;
 import java.util.HashMap;
@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
+import java.util.Stack;
 
 
 
@@ -103,7 +104,7 @@ public class Portugolv3Parser extends Parser {
     }
 
     public String[] getTokenNames() { return Portugolv3Parser.tokenNames; }
-    public String getGrammarFileName() { return "/Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g"; }
+    public String getGrammarFileName() { return "/Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g"; }
 
 
     //Tabela de simbolos
@@ -117,7 +118,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "prog"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:1: prog : ( COMMENT )* 'PROGRAMA' nomePrograma= ID ';' ( declVars )* ( declFuncoes )* ( comandos )* 'FIM' '.' -> ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:1: prog : ( COMMENT )* 'PROGRAMA' nomePrograma= ID ';' ( declVars )* ( declFuncoes )* ( comandos )* 'FIM' '.' -> ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) ) ;
     public final Portugolv3Parser.prog_return prog() throws RecognitionException {
         Portugolv3Parser.prog_return retval = new Portugolv3Parser.prog_return();
         retval.start = input.LT(1);
@@ -153,10 +154,10 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_declFuncoes=new RewriteRuleSubtreeStream(adaptor,"rule declFuncoes");
         RewriteRuleSubtreeStream stream_declVars=new RewriteRuleSubtreeStream(adaptor,"rule declVars");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:6: ( ( COMMENT )* 'PROGRAMA' nomePrograma= ID ';' ( declVars )* ( declFuncoes )* ( comandos )* 'FIM' '.' -> ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:8: ( COMMENT )* 'PROGRAMA' nomePrograma= ID ';' ( declVars )* ( declFuncoes )* ( comandos )* 'FIM' '.'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:6: ( ( COMMENT )* 'PROGRAMA' nomePrograma= ID ';' ( declVars )* ( declFuncoes )* ( comandos )* 'FIM' '.' -> ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:8: ( COMMENT )* 'PROGRAMA' nomePrograma= ID ';' ( declVars )* ( declFuncoes )* ( comandos )* 'FIM' '.'
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:8: ( COMMENT )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:8: ( COMMENT )*
             loop1:
             do {
                 int alt1=2;
@@ -169,7 +170,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:8: COMMENT
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:8: COMMENT
             	    {
             	    COMMENT1=(Token)match(input,COMMENT,FOLLOW_COMMENT_in_prog153);  
             	    stream_COMMENT.add(COMMENT1);
@@ -192,7 +193,7 @@ public class Portugolv3Parser extends Parser {
             char_literal3=(Token)match(input,32,FOLLOW_32_in_prog162);  
             stream_32.add(char_literal3);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:48: ( declVars )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:48: ( declVars )*
             loop2:
             do {
                 int alt2=2;
@@ -205,7 +206,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:48: declVars
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:48: declVars
             	    {
             	    pushFollow(FOLLOW_declVars_in_prog164);
             	    declVars4=declVars();
@@ -222,7 +223,7 @@ public class Portugolv3Parser extends Parser {
                 }
             } while (true);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:58: ( declFuncoes )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:58: ( declFuncoes )*
             loop3:
             do {
                 int alt3=2;
@@ -235,7 +236,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt3) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:58: declFuncoes
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:58: declFuncoes
             	    {
             	    pushFollow(FOLLOW_declFuncoes_in_prog167);
             	    declFuncoes5=declFuncoes();
@@ -252,7 +253,7 @@ public class Portugolv3Parser extends Parser {
                 }
             } while (true);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:71: ( comandos )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:71: ( comandos )*
             loop4:
             do {
                 int alt4=2;
@@ -265,7 +266,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt4) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:71: comandos
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:71: comandos
             	    {
             	    pushFollow(FOLLOW_comandos_in_prog170);
             	    comandos6=comandos();
@@ -291,7 +292,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: COMANDOS, VARIAVEIS, FUNCOES, nomePrograma, declFuncoes, declVars, comandos
+            // elements: comandos, COMANDOS, VARIAVEIS, nomePrograma, declVars, declFuncoes, FUNCOES
             // token labels: nomePrograma
             // rule labels: retval
             // token list labels: 
@@ -302,19 +303,19 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 56:91: -> ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) )
+            // 58:91: -> ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:94: ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:94: ^( $nomePrograma ^( 'VARIAVEIS' ( declVars )* ) ^( 'FUNCOES' ( declFuncoes )* ) ^( 'COMANDOS' ( comandos )* ) )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_nomePrograma.nextNode(), root_1);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:110: ^( 'VARIAVEIS' ( declVars )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:110: ^( 'VARIAVEIS' ( declVars )* )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(VARIAVEIS, "VARIAVEIS"), root_2);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:124: ( declVars )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:124: ( declVars )*
                 while ( stream_declVars.hasNext() ) {
                     adaptor.addChild(root_2, stream_declVars.nextTree());
 
@@ -323,12 +324,12 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:135: ^( 'FUNCOES' ( declFuncoes )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:135: ^( 'FUNCOES' ( declFuncoes )* )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(FUNCOES, "FUNCOES"), root_2);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:147: ( declFuncoes )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:147: ( declFuncoes )*
                 while ( stream_declFuncoes.hasNext() ) {
                     adaptor.addChild(root_2, stream_declFuncoes.nextTree());
 
@@ -337,12 +338,12 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:161: ^( 'COMANDOS' ( comandos )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:161: ^( 'COMANDOS' ( comandos )* )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(COMANDOS, "COMANDOS"), root_2);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:56:174: ( comandos )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:58:174: ( comandos )*
                 while ( stream_comandos.hasNext() ) {
                     adaptor.addChild(root_2, stream_comandos.nextTree());
 
@@ -384,7 +385,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "declVars"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:59:1: declVars : a= tipo listaIDs= listaIds ';' -> ^( tipo listaIds ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:61:1: declVars : a= tipo listaIDs= listaIds ';' -> ^( tipo listaIds ) ;
     public final Portugolv3Parser.declVars_return declVars() throws RecognitionException {
         Portugolv3Parser.declVars_return retval = new Portugolv3Parser.declVars_return();
         retval.start = input.LT(1);
@@ -402,8 +403,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_listaIds=new RewriteRuleSubtreeStream(adaptor,"rule listaIds");
         RewriteRuleSubtreeStream stream_tipo=new RewriteRuleSubtreeStream(adaptor,"rule tipo");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:74:2: (a= tipo listaIDs= listaIds ';' -> ^( tipo listaIds ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:74:4: a= tipo listaIDs= listaIds ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:76:2: (a= tipo listaIDs= listaIds ';' -> ^( tipo listaIds ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:76:4: a= tipo listaIDs= listaIds ';'
             {
             pushFollow(FOLLOW_tipo_in_declVars225);
             a=tipo();
@@ -433,9 +434,9 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 74:32: -> ^( tipo listaIds )
+            // 76:32: -> ^( tipo listaIds )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:74:35: ^( tipo listaIds )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:76:35: ^( tipo listaIds )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_tipo.nextNode(), root_1);
@@ -488,7 +489,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "tipo"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:78:1: tipo returns [int numeroTipo] : ( 'INTEIRO' | 'STRING' | 'BOOLEANO' | 'VOID' );
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:80:1: tipo returns [int numeroTipo] : ( 'INTEIRO' | 'STRING' | 'BOOLEANO' | 'VOID' );
     public final Portugolv3Parser.tipo_return tipo() throws RecognitionException {
         Portugolv3Parser.tipo_return retval = new Portugolv3Parser.tipo_return();
         retval.start = input.LT(1);
@@ -506,7 +507,7 @@ public class Portugolv3Parser extends Parser {
         CommonTree string_literal13_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:79:2: ( 'INTEIRO' | 'STRING' | 'BOOLEANO' | 'VOID' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:81:2: ( 'INTEIRO' | 'STRING' | 'BOOLEANO' | 'VOID' )
             int alt5=4;
             switch ( input.LA(1) ) {
             case 34:
@@ -538,7 +539,7 @@ public class Portugolv3Parser extends Parser {
 
             switch (alt5) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:79:3: 'INTEIRO'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:81:3: 'INTEIRO'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -551,7 +552,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:80:3: 'STRING'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:82:3: 'STRING'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -564,7 +565,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:81:3: 'BOOLEANO'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:83:3: 'BOOLEANO'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -577,7 +578,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:82:3: 'VOID'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:84:3: 'VOID'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -616,7 +617,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "listaIds"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:86:1: listaIds returns [List<String> lista] : (ids+= ID ) ( ',' ids+= ID )* -> ( ID )+ ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:88:1: listaIds returns [List<String> lista] : (ids+= ID ) ( ',' ids+= ID )* -> ( ID )+ ;
     public final Portugolv3Parser.listaIds_return listaIds() throws RecognitionException {
         Portugolv3Parser.listaIds_return retval = new Portugolv3Parser.listaIds_return();
         retval.start = input.LT(1);
@@ -633,11 +634,11 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_38=new RewriteRuleTokenStream(adaptor,"token 38");
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:87:2: ( (ids+= ID ) ( ',' ids+= ID )* -> ( ID )+ )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:87:3: (ids+= ID ) ( ',' ids+= ID )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:89:2: ( (ids+= ID ) ( ',' ids+= ID )* -> ( ID )+ )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:89:3: (ids+= ID ) ( ',' ids+= ID )*
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:87:3: (ids+= ID )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:87:4: ids+= ID
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:89:3: (ids+= ID )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:89:4: ids+= ID
             {
             ids=(Token)match(input,ID,FOLLOW_ID_in_listaIds303);  
             stream_ID.add(ids);
@@ -648,7 +649,7 @@ public class Portugolv3Parser extends Parser {
 
             }
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:87:13: ( ',' ids+= ID )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:89:13: ( ',' ids+= ID )*
             loop6:
             do {
                 int alt6=2;
@@ -661,7 +662,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt6) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:87:14: ',' ids+= ID
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:89:14: ',' ids+= ID
             	    {
             	    char_literal14=(Token)match(input,38,FOLLOW_38_in_listaIds307);  
             	    stream_38.add(char_literal14);
@@ -695,7 +696,7 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 87:45: -> ( ID )+
+            // 89:45: -> ( ID )+
             {
                 if ( !(stream_ID.hasNext()) ) {
                     throw new RewriteEarlyExitException();
@@ -735,7 +736,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "declFuncoes"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:91:1: declFuncoes : 'FUNCAO' nomeFuncao= ID '(' ( ( listaParametros )* ) ')' ':' tipo ';' corpoFuncao 'FIM' ';' -> ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:93:1: declFuncoes : 'FUNCAO' nomeFuncao= ID '(' ( ( listaParametros )* ) ')' ':' tipo ';' corpoFuncao 'FIM' ';' -> ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) ) ;
     public final Portugolv3Parser.declFuncoes_return declFuncoes() throws RecognitionException {
         Portugolv3Parser.declFuncoes_return retval = new Portugolv3Parser.declFuncoes_return();
         retval.start = input.LT(1);
@@ -776,8 +777,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_tipo=new RewriteRuleSubtreeStream(adaptor,"rule tipo");
         RewriteRuleSubtreeStream stream_corpoFuncao=new RewriteRuleSubtreeStream(adaptor,"rule corpoFuncao");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:2: ( 'FUNCAO' nomeFuncao= ID '(' ( ( listaParametros )* ) ')' ':' tipo ';' corpoFuncao 'FIM' ';' -> ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:3: 'FUNCAO' nomeFuncao= ID '(' ( ( listaParametros )* ) ')' ':' tipo ';' corpoFuncao 'FIM' ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:2: ( 'FUNCAO' nomeFuncao= ID '(' ( ( listaParametros )* ) ')' ':' tipo ';' corpoFuncao 'FIM' ';' -> ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:3: 'FUNCAO' nomeFuncao= ID '(' ( ( listaParametros )* ) ')' ':' tipo ';' corpoFuncao 'FIM' ';'
             {
             string_literal15=(Token)match(input,39,FOLLOW_39_in_declFuncoes332);  
             stream_39.add(string_literal15);
@@ -788,10 +789,10 @@ public class Portugolv3Parser extends Parser {
             char_literal16=(Token)match(input,40,FOLLOW_40_in_declFuncoes338);  
             stream_40.add(char_literal16);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:29: ( ( listaParametros )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:30: ( listaParametros )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:29: ( ( listaParametros )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:30: ( listaParametros )*
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:30: ( listaParametros )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:30: ( listaParametros )*
             loop7:
             do {
                 int alt7=2;
@@ -804,7 +805,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt7) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:30: listaParametros
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:30: listaParametros
             	    {
             	    pushFollow(FOLLOW_listaParametros_in_declFuncoes340);
             	    listaParametros17=listaParametros();
@@ -854,7 +855,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: corpoFuncao, tipo, listaParametros, CORPOFUNCAO, nomeFuncao, TIPORETORNO, LISTAPARAMETROS
+            // elements: corpoFuncao, nomeFuncao, LISTAPARAMETROS, listaParametros, CORPOFUNCAO, tipo, TIPORETORNO
             // token labels: nomeFuncao
             // rule labels: retval
             // token list labels: 
@@ -865,19 +866,19 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 92:85: -> ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) )
+            // 94:85: -> ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:88: ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:88: ^( $nomeFuncao ^( 'LISTAPARAMETROS' ( listaParametros )* ) ^( 'TIPORETORNO' tipo ) ^( 'CORPOFUNCAO' corpoFuncao ) )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_nomeFuncao.nextNode(), root_1);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:102: ^( 'LISTAPARAMETROS' ( listaParametros )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:102: ^( 'LISTAPARAMETROS' ( listaParametros )* )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(LISTAPARAMETROS, "LISTAPARAMETROS"), root_2);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:122: ( listaParametros )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:122: ( listaParametros )*
                 while ( stream_listaParametros.hasNext() ) {
                     adaptor.addChild(root_2, stream_listaParametros.nextTree());
 
@@ -886,7 +887,7 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:140: ^( 'TIPORETORNO' tipo )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:140: ^( 'TIPORETORNO' tipo )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(TIPORETORNO, "TIPORETORNO"), root_2);
@@ -895,7 +896,7 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:92:162: ^( 'CORPOFUNCAO' corpoFuncao )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:94:162: ^( 'CORPOFUNCAO' corpoFuncao )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(CORPOFUNCAO, "CORPOFUNCAO"), root_2);
@@ -937,7 +938,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "corpoFuncao"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:96:1: corpoFuncao : ( declVars )* ( comandos )* -> ^( 'VARIAVEIS' ( declVars )* ) ^( 'COMANDOS' ( comandos )* ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:98:1: corpoFuncao : ( declVars )* ( comandos )* -> ^( 'VARIAVEIS' ( declVars )* ) ^( 'COMANDOS' ( comandos )* ) ;
     public final Portugolv3Parser.corpoFuncao_return corpoFuncao() throws RecognitionException {
         Portugolv3Parser.corpoFuncao_return retval = new Portugolv3Parser.corpoFuncao_return();
         retval.start = input.LT(1);
@@ -952,10 +953,10 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_comandos=new RewriteRuleSubtreeStream(adaptor,"rule comandos");
         RewriteRuleSubtreeStream stream_declVars=new RewriteRuleSubtreeStream(adaptor,"rule declVars");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:2: ( ( declVars )* ( comandos )* -> ^( 'VARIAVEIS' ( declVars )* ) ^( 'COMANDOS' ( comandos )* ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:4: ( declVars )* ( comandos )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:2: ( ( declVars )* ( comandos )* -> ^( 'VARIAVEIS' ( declVars )* ) ^( 'COMANDOS' ( comandos )* ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:4: ( declVars )* ( comandos )*
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:4: ( declVars )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:4: ( declVars )*
             loop8:
             do {
                 int alt8=2;
@@ -968,7 +969,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt8) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:4: declVars
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:4: declVars
             	    {
             	    pushFollow(FOLLOW_declVars_in_corpoFuncao394);
             	    declVars25=declVars();
@@ -985,7 +986,7 @@ public class Portugolv3Parser extends Parser {
                 }
             } while (true);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:14: ( comandos )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:14: ( comandos )*
             loop9:
             do {
                 int alt9=2;
@@ -998,7 +999,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt9) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:14: comandos
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:14: comandos
             	    {
             	    pushFollow(FOLLOW_comandos_in_corpoFuncao397);
             	    comandos26=comandos();
@@ -1018,7 +1019,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: comandos, COMANDOS, declVars, VARIAVEIS
+            // elements: comandos, COMANDOS, VARIAVEIS, declVars
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1028,14 +1029,14 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 97:24: -> ^( 'VARIAVEIS' ( declVars )* ) ^( 'COMANDOS' ( comandos )* )
+            // 99:24: -> ^( 'VARIAVEIS' ( declVars )* ) ^( 'COMANDOS' ( comandos )* )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:27: ^( 'VARIAVEIS' ( declVars )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:27: ^( 'VARIAVEIS' ( declVars )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(VARIAVEIS, "VARIAVEIS"), root_1);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:41: ( declVars )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:41: ( declVars )*
                 while ( stream_declVars.hasNext() ) {
                     adaptor.addChild(root_1, stream_declVars.nextTree());
 
@@ -1044,12 +1045,12 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_0, root_1);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:52: ^( 'COMANDOS' ( comandos )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:52: ^( 'COMANDOS' ( comandos )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(COMANDOS, "COMANDOS"), root_1);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:97:65: ( comandos )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:99:65: ( comandos )*
                 while ( stream_comandos.hasNext() ) {
                     adaptor.addChild(root_1, stream_comandos.nextTree());
 
@@ -1088,7 +1089,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "listaParametros"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:101:1: listaParametros : ( ID ':' tipo ) ( ',' ID ':' tipo )* -> ( ^( tipo ID ) )* ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:103:1: listaParametros : ( ID ':' tipo ) ( ',' ID ':' tipo )* -> ( ^( tipo ID ) )* ;
     public final Portugolv3Parser.listaParametros_return listaParametros() throws RecognitionException {
         Portugolv3Parser.listaParametros_return retval = new Portugolv3Parser.listaParametros_return();
         retval.start = input.LT(1);
@@ -1115,11 +1116,11 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_38=new RewriteRuleTokenStream(adaptor,"token 38");
         RewriteRuleSubtreeStream stream_tipo=new RewriteRuleSubtreeStream(adaptor,"rule tipo");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:2: ( ( ID ':' tipo ) ( ',' ID ':' tipo )* -> ( ^( tipo ID ) )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:3: ( ID ':' tipo ) ( ',' ID ':' tipo )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:2: ( ( ID ':' tipo ) ( ',' ID ':' tipo )* -> ( ^( tipo ID ) )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:3: ( ID ':' tipo ) ( ',' ID ':' tipo )*
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:3: ( ID ':' tipo )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:4: ID ':' tipo
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:3: ( ID ':' tipo )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:4: ID ':' tipo
             {
             ID27=(Token)match(input,ID,FOLLOW_ID_in_listaParametros427);  
             stream_ID.add(ID27);
@@ -1136,7 +1137,7 @@ public class Portugolv3Parser extends Parser {
 
             }
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:17: ( ',' ID ':' tipo )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:17: ( ',' ID ':' tipo )*
             loop10:
             do {
                 int alt10=2;
@@ -1149,7 +1150,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt10) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:18: ',' ID ':' tipo
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:18: ',' ID ':' tipo
             	    {
             	    char_literal30=(Token)match(input,38,FOLLOW_38_in_listaParametros435);  
             	    stream_38.add(char_literal30);
@@ -1188,11 +1189,11 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 102:36: -> ( ^( tipo ID ) )*
+            // 104:36: -> ( ^( tipo ID ) )*
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:39: ( ^( tipo ID ) )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:39: ( ^( tipo ID ) )*
                 while ( stream_ID.hasNext()||stream_tipo.hasNext() ) {
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:102:39: ^( tipo ID )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:104:39: ^( tipo ID )
                     {
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     root_1 = (CommonTree)adaptor.becomeRoot(stream_tipo.nextNode(), root_1);
@@ -1235,7 +1236,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comandos"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:106:1: comandos : ( comando_se_senao -> comando_se_senao | comando_para -> comando_para | comando_imprimir -> comando_imprimir | comando_ler -> comando_ler | comando_enquanto -> comando_enquanto | 'SAIR' ';' -> 'SAIR' | chamadaFuncao ';' -> chamadaFuncao | comando_atribuicao -> comando_atribuicao );
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:108:1: comandos : ( comando_se_senao -> comando_se_senao | comando_para -> comando_para | comando_imprimir -> comando_imprimir | comando_ler -> comando_ler | comando_enquanto -> comando_enquanto | 'SAIR' ';' -> 'SAIR' | chamadaFuncao ';' -> chamadaFuncao | comando_atribuicao -> comando_atribuicao );
     public final Portugolv3Parser.comandos_return comandos() throws RecognitionException {
         Portugolv3Parser.comandos_return retval = new Portugolv3Parser.comandos_return();
         retval.start = input.LT(1);
@@ -1273,12 +1274,12 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_chamadaFuncao=new RewriteRuleSubtreeStream(adaptor,"rule chamadaFuncao");
         RewriteRuleSubtreeStream stream_comando_imprimir=new RewriteRuleSubtreeStream(adaptor,"rule comando_imprimir");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:106:9: ( comando_se_senao -> comando_se_senao | comando_para -> comando_para | comando_imprimir -> comando_imprimir | comando_ler -> comando_ler | comando_enquanto -> comando_enquanto | 'SAIR' ';' -> 'SAIR' | chamadaFuncao ';' -> chamadaFuncao | comando_atribuicao -> comando_atribuicao )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:108:9: ( comando_se_senao -> comando_se_senao | comando_para -> comando_para | comando_imprimir -> comando_imprimir | comando_ler -> comando_ler | comando_enquanto -> comando_enquanto | 'SAIR' ';' -> 'SAIR' | chamadaFuncao ';' -> chamadaFuncao | comando_atribuicao -> comando_atribuicao )
             int alt11=8;
             alt11 = dfa11.predict(input);
             switch (alt11) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:107:2: comando_se_senao
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:109:2: comando_se_senao
                     {
                     pushFollow(FOLLOW_comando_se_senao_in_comandos466);
                     comando_se_senao34=comando_se_senao();
@@ -1299,7 +1300,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 107:19: -> comando_se_senao
+                    // 109:19: -> comando_se_senao
                     {
                         adaptor.addChild(root_0, stream_comando_se_senao.nextTree());
 
@@ -1309,7 +1310,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:109:3: comando_para
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:111:3: comando_para
                     {
                     pushFollow(FOLLOW_comando_para_in_comandos476);
                     comando_para35=comando_para();
@@ -1330,7 +1331,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 109:16: -> comando_para
+                    // 111:16: -> comando_para
                     {
                         adaptor.addChild(root_0, stream_comando_para.nextTree());
 
@@ -1340,7 +1341,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:110:3: comando_imprimir
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:112:3: comando_imprimir
                     {
                     pushFollow(FOLLOW_comando_imprimir_in_comandos484);
                     comando_imprimir36=comando_imprimir();
@@ -1361,7 +1362,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 110:20: -> comando_imprimir
+                    // 112:20: -> comando_imprimir
                     {
                         adaptor.addChild(root_0, stream_comando_imprimir.nextTree());
 
@@ -1371,7 +1372,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:111:3: comando_ler
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:113:3: comando_ler
                     {
                     pushFollow(FOLLOW_comando_ler_in_comandos492);
                     comando_ler37=comando_ler();
@@ -1392,7 +1393,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 111:15: -> comando_ler
+                    // 113:15: -> comando_ler
                     {
                         adaptor.addChild(root_0, stream_comando_ler.nextTree());
 
@@ -1402,7 +1403,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:112:3: comando_enquanto
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:114:3: comando_enquanto
                     {
                     pushFollow(FOLLOW_comando_enquanto_in_comandos500);
                     comando_enquanto38=comando_enquanto();
@@ -1423,7 +1424,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 112:20: -> comando_enquanto
+                    // 114:20: -> comando_enquanto
                     {
                         adaptor.addChild(root_0, stream_comando_enquanto.nextTree());
 
@@ -1433,7 +1434,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:113:3: 'SAIR' ';'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:115:3: 'SAIR' ';'
                     {
                     string_literal39=(Token)match(input,43,FOLLOW_43_in_comandos508);  
                     stream_43.add(string_literal39);
@@ -1454,7 +1455,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 113:14: -> 'SAIR'
+                    // 115:14: -> 'SAIR'
                     {
                         adaptor.addChild(root_0, stream_43.nextNode());
 
@@ -1464,7 +1465,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 7 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:114:4: chamadaFuncao ';'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:116:4: chamadaFuncao ';'
                     {
                     pushFollow(FOLLOW_chamadaFuncao_in_comandos520);
                     chamadaFuncao41=chamadaFuncao();
@@ -1488,7 +1489,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 114:22: -> chamadaFuncao
+                    // 116:22: -> chamadaFuncao
                     {
                         adaptor.addChild(root_0, stream_chamadaFuncao.nextTree());
 
@@ -1498,7 +1499,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 8 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:115:4: comando_atribuicao
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:117:4: comando_atribuicao
                     {
                     pushFollow(FOLLOW_comando_atribuicao_in_comandos531);
                     comando_atribuicao43=comando_atribuicao();
@@ -1519,7 +1520,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 115:23: -> comando_atribuicao
+                    // 117:23: -> comando_atribuicao
                     {
                         adaptor.addChild(root_0, stream_comando_atribuicao.nextTree());
 
@@ -1554,7 +1555,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comando_enquanto"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:119:1: comando_enquanto : 'ENQUANTO' '(' exprBooleana ')' ( comandos )* 'FIM' ';' -> ^( ENQUANTO exprBooleana ( comandos )* ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:121:1: comando_enquanto : 'ENQUANTO' '(' exprBooleana ')' ( comandos )* 'FIM' ';' -> ^( ENQUANTO exprBooleana ( comandos )* ) ;
     public final Portugolv3Parser.comando_enquanto_return comando_enquanto() throws RecognitionException {
         Portugolv3Parser.comando_enquanto_return retval = new Portugolv3Parser.comando_enquanto_return();
         retval.start = input.LT(1);
@@ -1584,8 +1585,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_comandos=new RewriteRuleSubtreeStream(adaptor,"rule comandos");
         RewriteRuleSubtreeStream stream_exprBooleana=new RewriteRuleSubtreeStream(adaptor,"rule exprBooleana");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:120:2: ( 'ENQUANTO' '(' exprBooleana ')' ( comandos )* 'FIM' ';' -> ^( ENQUANTO exprBooleana ( comandos )* ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:120:3: 'ENQUANTO' '(' exprBooleana ')' ( comandos )* 'FIM' ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:122:2: ( 'ENQUANTO' '(' exprBooleana ')' ( comandos )* 'FIM' ';' -> ^( ENQUANTO exprBooleana ( comandos )* ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:122:3: 'ENQUANTO' '(' exprBooleana ')' ( comandos )* 'FIM' ';'
             {
             string_literal44=(Token)match(input,ENQUANTO,FOLLOW_ENQUANTO_in_comando_enquanto547);  
             stream_ENQUANTO.add(string_literal44);
@@ -1602,7 +1603,7 @@ public class Portugolv3Parser extends Parser {
             char_literal47=(Token)match(input,41,FOLLOW_41_in_comando_enquanto553);  
             stream_41.add(char_literal47);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:120:35: ( comandos )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:122:35: ( comandos )*
             loop12:
             do {
                 int alt12=2;
@@ -1615,7 +1616,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt12) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:120:35: comandos
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:122:35: comandos
             	    {
             	    pushFollow(FOLLOW_comandos_in_comando_enquanto555);
             	    comandos48=comandos();
@@ -1651,15 +1652,15 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 120:55: -> ^( ENQUANTO exprBooleana ( comandos )* )
+            // 122:55: -> ^( ENQUANTO exprBooleana ( comandos )* )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:120:58: ^( ENQUANTO exprBooleana ( comandos )* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:122:58: ^( ENQUANTO exprBooleana ( comandos )* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(ENQUANTO, "ENQUANTO"), root_1);
 
                 adaptor.addChild(root_1, stream_exprBooleana.nextTree());
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:120:82: ( comandos )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:122:82: ( comandos )*
                 while ( stream_comandos.hasNext() ) {
                     adaptor.addChild(root_1, stream_comandos.nextTree());
 
@@ -1698,7 +1699,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comando_para"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:124:1: comando_para : 'PARA' '(' ID '=' expr 'ATE' comparacao ( 'PASSO' expr )? ')' ( comandos )* 'FIM' ';' -> ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:126:1: comando_para : 'PARA' '(' ID '=' expr 'ATE' comparacao ( 'PASSO' expr )? ')' ( comandos )* 'FIM' ';' -> ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) ) ;
     public final Portugolv3Parser.comando_para_return comando_para() throws RecognitionException {
         Portugolv3Parser.comando_para_return retval = new Portugolv3Parser.comando_para_return();
         retval.start = input.LT(1);
@@ -1745,8 +1746,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         RewriteRuleSubtreeStream stream_comparacao=new RewriteRuleSubtreeStream(adaptor,"rule comparacao");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:2: ( 'PARA' '(' ID '=' expr 'ATE' comparacao ( 'PASSO' expr )? ')' ( comandos )* 'FIM' ';' -> ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:3: 'PARA' '(' ID '=' expr 'ATE' comparacao ( 'PASSO' expr )? ')' ( comandos )* 'FIM' ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:2: ( 'PARA' '(' ID '=' expr 'ATE' comparacao ( 'PASSO' expr )? ')' ( comandos )* 'FIM' ';' -> ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:3: 'PARA' '(' ID '=' expr 'ATE' comparacao ( 'PASSO' expr )? ')' ( comandos )* 'FIM' ';'
             {
             string_literal51=(Token)match(input,PARA,FOLLOW_PARA_in_comando_para583);  
             stream_PARA.add(string_literal51);
@@ -1775,7 +1776,7 @@ public class Portugolv3Parser extends Parser {
             state._fsp--;
 
             stream_comparacao.add(comparacao57.getTree());
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:44: ( 'PASSO' expr )?
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:44: ( 'PASSO' expr )?
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1784,7 +1785,7 @@ public class Portugolv3Parser extends Parser {
             }
             switch (alt13) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:45: 'PASSO' expr
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:45: 'PASSO' expr
                     {
                     string_literal58=(Token)match(input,PASSO,FOLLOW_PASSO_in_comando_para599);  
                     stream_PASSO.add(string_literal58);
@@ -1804,7 +1805,7 @@ public class Portugolv3Parser extends Parser {
             char_literal60=(Token)match(input,41,FOLLOW_41_in_comando_para605);  
             stream_41.add(char_literal60);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:64: ( comandos )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:64: ( comandos )*
             loop14:
             do {
                 int alt14=2;
@@ -1817,7 +1818,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt14) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:64: comandos
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:64: comandos
             	    {
             	    pushFollow(FOLLOW_comandos_in_comando_para607);
             	    comandos61=comandos();
@@ -1843,7 +1844,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: comandos, expr, ID, ATRIBUICAO, PASSO, CONDICAO, COMANDOS, comparacao, expr
+            // elements: expr, comandos, comparacao, ID, ATRIBUICAO, COMANDOS, CONDICAO, expr, PASSO
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1853,14 +1854,14 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 125:85: -> ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) )
+            // 127:85: -> ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:88: ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:88: ^( PARA ^( 'ATRIBUICAO' ID expr ) ^( 'CONDICAO' comparacao ) ( ^( 'PASSO' expr ) )? ^( 'COMANDOS' ( comandos )* ) )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(PARA, "PARA"), root_1);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:95: ^( 'ATRIBUICAO' ID expr )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:95: ^( 'ATRIBUICAO' ID expr )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(ATRIBUICAO, "ATRIBUICAO"), root_2);
@@ -1870,7 +1871,7 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:119: ^( 'CONDICAO' comparacao )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:119: ^( 'CONDICAO' comparacao )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(CONDICAO, "CONDICAO"), root_2);
@@ -1879,9 +1880,9 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:144: ( ^( 'PASSO' expr ) )?
-                if ( stream_PASSO.hasNext()||stream_expr.hasNext() ) {
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:144: ^( 'PASSO' expr )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:144: ( ^( 'PASSO' expr ) )?
+                if ( stream_expr.hasNext()||stream_PASSO.hasNext() ) {
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:144: ^( 'PASSO' expr )
                     {
                     CommonTree root_2 = (CommonTree)adaptor.nil();
                     root_2 = (CommonTree)adaptor.becomeRoot(stream_PASSO.nextNode(), root_2);
@@ -1892,14 +1893,14 @@ public class Portugolv3Parser extends Parser {
                     }
 
                 }
-                stream_PASSO.reset();
                 stream_expr.reset();
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:161: ^( 'COMANDOS' ( comandos )* )
+                stream_PASSO.reset();
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:161: ^( 'COMANDOS' ( comandos )* )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(COMANDOS, "COMANDOS"), root_2);
 
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:125:174: ( comandos )*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:127:174: ( comandos )*
                 while ( stream_comandos.hasNext() ) {
                     adaptor.addChild(root_2, stream_comandos.nextTree());
 
@@ -1941,7 +1942,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comando_imprimir"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:129:1: comando_imprimir : 'IMPRIMA' '(' a= expr ( ',' b= expr )* ')' ';' -> ^( IMPRIMA $a ( $b)* ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:131:1: comando_imprimir : 'IMPRIMA' '(' a= expr ( ',' b= expr )* ')' ';' -> ^( IMPRIMA $a ( $b)* ) ;
     public final Portugolv3Parser.comando_imprimir_return comando_imprimir() throws RecognitionException {
         Portugolv3Parser.comando_imprimir_return retval = new Portugolv3Parser.comando_imprimir_return();
         retval.start = input.LT(1);
@@ -1970,8 +1971,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_38=new RewriteRuleTokenStream(adaptor,"token 38");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:130:2: ( 'IMPRIMA' '(' a= expr ( ',' b= expr )* ')' ';' -> ^( IMPRIMA $a ( $b)* ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:130:3: 'IMPRIMA' '(' a= expr ( ',' b= expr )* ')' ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:132:2: ( 'IMPRIMA' '(' a= expr ( ',' b= expr )* ')' ';' -> ^( IMPRIMA $a ( $b)* ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:132:3: 'IMPRIMA' '(' a= expr ( ',' b= expr )* ')' ';'
             {
             string_literal64=(Token)match(input,IMPRIMA,FOLLOW_IMPRIMA_in_comando_imprimir662);  
             stream_IMPRIMA.add(string_literal64);
@@ -1985,7 +1986,7 @@ public class Portugolv3Parser extends Parser {
             state._fsp--;
 
             stream_expr.add(a.getTree());
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:130:24: ( ',' b= expr )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:132:24: ( ',' b= expr )*
             loop15:
             do {
                 int alt15=2;
@@ -1998,7 +1999,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt15) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:130:25: ',' b= expr
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:132:25: ',' b= expr
             	    {
             	    char_literal66=(Token)match(input,38,FOLLOW_38_in_comando_imprimir671);  
             	    stream_38.add(char_literal66);
@@ -2039,15 +2040,15 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_a=new RewriteRuleSubtreeStream(adaptor,"rule a",a!=null?a.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 130:47: -> ^( IMPRIMA $a ( $b)* )
+            // 132:47: -> ^( IMPRIMA $a ( $b)* )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:130:50: ^( IMPRIMA $a ( $b)* )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:132:50: ^( IMPRIMA $a ( $b)* )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(IMPRIMA, "IMPRIMA"), root_1);
 
                 adaptor.addChild(root_1, stream_a.nextTree());
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:130:63: ( $b)*
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:132:63: ( $b)*
                 while ( stream_b.hasNext() ) {
                     adaptor.addChild(root_1, stream_b.nextTree());
 
@@ -2086,7 +2087,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comando_ler"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:134:1: comando_ler : 'LEIA' '(' listaIds ')' ';' -> ^( LEIA listaIds ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:136:1: comando_ler : 'LEIA' '(' listaIds ')' ';' -> ^( LEIA listaIds ) ;
     public final Portugolv3Parser.comando_ler_return comando_ler() throws RecognitionException {
         Portugolv3Parser.comando_ler_return retval = new Portugolv3Parser.comando_ler_return();
         retval.start = input.LT(1);
@@ -2110,8 +2111,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_LEIA=new RewriteRuleTokenStream(adaptor,"token LEIA");
         RewriteRuleSubtreeStream stream_listaIds=new RewriteRuleSubtreeStream(adaptor,"rule listaIds");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:134:13: ( 'LEIA' '(' listaIds ')' ';' -> ^( LEIA listaIds ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:134:15: 'LEIA' '(' listaIds ')' ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:136:13: ( 'LEIA' '(' listaIds ')' ';' -> ^( LEIA listaIds ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:136:15: 'LEIA' '(' listaIds ')' ';'
             {
             string_literal69=(Token)match(input,LEIA,FOLLOW_LEIA_in_comando_ler708);  
             stream_LEIA.add(string_literal69);
@@ -2144,9 +2145,9 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 134:43: -> ^( LEIA listaIds )
+            // 136:43: -> ^( LEIA listaIds )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:134:46: ^( LEIA listaIds )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:136:46: ^( LEIA listaIds )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(LEIA, "LEIA"), root_1);
@@ -2185,7 +2186,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comando_se_senao"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:138:1: comando_se_senao : SE '(' exprBooleana ')' ( comandos )+ ( senao )? 'FIM' ';' -> ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:140:1: comando_se_senao : SE '(' exprBooleana ')' ( comandos )+ ( senao )? 'FIM' ';' -> ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? ) ;
     public final Portugolv3Parser.comando_se_senao_return comando_se_senao() throws RecognitionException {
         Portugolv3Parser.comando_se_senao_return retval = new Portugolv3Parser.comando_se_senao_return();
         retval.start = input.LT(1);
@@ -2218,8 +2219,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleSubtreeStream stream_exprBooleana=new RewriteRuleSubtreeStream(adaptor,"rule exprBooleana");
         RewriteRuleSubtreeStream stream_senao=new RewriteRuleSubtreeStream(adaptor,"rule senao");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:2: ( SE '(' exprBooleana ')' ( comandos )+ ( senao )? 'FIM' ';' -> ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:4: SE '(' exprBooleana ')' ( comandos )+ ( senao )? 'FIM' ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:2: ( SE '(' exprBooleana ')' ( comandos )+ ( senao )? 'FIM' ';' -> ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:4: SE '(' exprBooleana ')' ( comandos )+ ( senao )? 'FIM' ';'
             {
             SE74=(Token)match(input,SE,FOLLOW_SE_in_comando_se_senao737);  
             stream_SE.add(SE74);
@@ -2236,7 +2237,7 @@ public class Portugolv3Parser extends Parser {
             char_literal77=(Token)match(input,41,FOLLOW_41_in_comando_se_senao743);  
             stream_41.add(char_literal77);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:28: ( comandos )+
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:28: ( comandos )+
             int cnt16=0;
             loop16:
             do {
@@ -2250,7 +2251,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt16) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:28: comandos
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:28: comandos
             	    {
             	    pushFollow(FOLLOW_comandos_in_comando_se_senao745);
             	    comandos78=comandos();
@@ -2271,7 +2272,7 @@ public class Portugolv3Parser extends Parser {
                 cnt16++;
             } while (true);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:38: ( senao )?
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:38: ( senao )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -2280,7 +2281,7 @@ public class Portugolv3Parser extends Parser {
             }
             switch (alt17) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:38: senao
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:38: senao
                     {
                     pushFollow(FOLLOW_senao_in_comando_se_senao748);
                     senao79=senao();
@@ -2303,7 +2304,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: SE, exprBooleana, senao, comandos
+            // elements: exprBooleana, comandos, SE, senao
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2313,15 +2314,15 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 139:55: -> ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? )
+            // 141:55: -> ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:58: ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:58: ^( SE exprBooleana ^( ENTAO ( comandos )+ ) ( senao )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_SE.nextNode(), root_1);
 
                 adaptor.addChild(root_1, stream_exprBooleana.nextTree());
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:76: ^( ENTAO ( comandos )+ )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:76: ^( ENTAO ( comandos )+ )
                 {
                 CommonTree root_2 = (CommonTree)adaptor.nil();
                 root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(ENTAO, "ENTAO"), root_2);
@@ -2337,7 +2338,7 @@ public class Portugolv3Parser extends Parser {
 
                 adaptor.addChild(root_1, root_2);
                 }
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:139:95: ( senao )?
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:141:95: ( senao )?
                 if ( stream_senao.hasNext() ) {
                     adaptor.addChild(root_1, stream_senao.nextTree());
 
@@ -2376,7 +2377,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "senao"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:1: senao : ( SENAO ( senao_comando )+ ) -> ^( SENAO ( senao_comando )+ ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:1: senao : ( SENAO ( senao_comando )+ ) -> ^( SENAO ( senao_comando )+ ) ;
     public final Portugolv3Parser.senao_return senao() throws RecognitionException {
         Portugolv3Parser.senao_return retval = new Portugolv3Parser.senao_return();
         retval.start = input.LT(1);
@@ -2391,16 +2392,16 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_SENAO=new RewriteRuleTokenStream(adaptor,"token SENAO");
         RewriteRuleSubtreeStream stream_senao_comando=new RewriteRuleSubtreeStream(adaptor,"rule senao_comando");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:7: ( ( SENAO ( senao_comando )+ ) -> ^( SENAO ( senao_comando )+ ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:9: ( SENAO ( senao_comando )+ )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:7: ( ( SENAO ( senao_comando )+ ) -> ^( SENAO ( senao_comando )+ ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:9: ( SENAO ( senao_comando )+ )
             {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:9: ( SENAO ( senao_comando )+ )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:10: SENAO ( senao_comando )+
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:9: ( SENAO ( senao_comando )+ )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:10: SENAO ( senao_comando )+
             {
             SENAO82=(Token)match(input,SENAO,FOLLOW_SENAO_in_senao785);  
             stream_SENAO.add(SENAO82);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:16: ( senao_comando )+
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:16: ( senao_comando )+
             int cnt18=0;
             loop18:
             do {
@@ -2414,7 +2415,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt18) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:16: senao_comando
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:16: senao_comando
             	    {
             	    pushFollow(FOLLOW_senao_comando_in_senao787);
             	    senao_comando83=senao_comando();
@@ -2441,7 +2442,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: senao_comando, SENAO
+            // elements: SENAO, senao_comando
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2451,9 +2452,9 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 143:32: -> ^( SENAO ( senao_comando )+ )
+            // 145:32: -> ^( SENAO ( senao_comando )+ )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:143:35: ^( SENAO ( senao_comando )+ )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:145:35: ^( SENAO ( senao_comando )+ )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_SENAO.nextNode(), root_1);
@@ -2499,7 +2500,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "senao_comando"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:147:1: senao_comando : comandos -> comandos ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:149:1: senao_comando : comandos -> comandos ;
     public final Portugolv3Parser.senao_comando_return senao_comando() throws RecognitionException {
         Portugolv3Parser.senao_comando_return retval = new Portugolv3Parser.senao_comando_return();
         retval.start = input.LT(1);
@@ -2511,8 +2512,8 @@ public class Portugolv3Parser extends Parser {
 
         RewriteRuleSubtreeStream stream_comandos=new RewriteRuleSubtreeStream(adaptor,"rule comandos");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:148:2: ( comandos -> comandos )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:148:4: comandos
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:150:2: ( comandos -> comandos )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:150:4: comandos
             {
             pushFollow(FOLLOW_comandos_in_senao_comando812);
             comandos84=comandos();
@@ -2533,7 +2534,7 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 148:13: -> comandos
+            // 150:13: -> comandos
             {
                 adaptor.addChild(root_0, stream_comandos.nextTree());
 
@@ -2566,7 +2567,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "chamadaFuncao"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:153:1: chamadaFuncao : ID '(' ( expr ( ',' expr )* )? ')' -> ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:155:1: chamadaFuncao : ID '(' ( expr ( ',' expr )* )? ')' -> ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? ) ;
     public final Portugolv3Parser.chamadaFuncao_return chamadaFuncao() throws RecognitionException {
         Portugolv3Parser.chamadaFuncao_return retval = new Portugolv3Parser.chamadaFuncao_return();
         retval.start = input.LT(1);
@@ -2592,8 +2593,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_38=new RewriteRuleTokenStream(adaptor,"token 38");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:2: ( ID '(' ( expr ( ',' expr )* )? ')' -> ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:4: ID '(' ( expr ( ',' expr )* )? ')'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:2: ( ID '(' ( expr ( ',' expr )* )? ')' -> ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:4: ID '(' ( expr ( ',' expr )* )? ')'
             {
             ID85=(Token)match(input,ID,FOLLOW_ID_in_chamadaFuncao832);  
             stream_ID.add(ID85);
@@ -2601,7 +2602,7 @@ public class Portugolv3Parser extends Parser {
             char_literal86=(Token)match(input,40,FOLLOW_40_in_chamadaFuncao834);  
             stream_40.add(char_literal86);
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:11: ( expr ( ',' expr )* )?
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:11: ( expr ( ',' expr )* )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -2610,7 +2611,7 @@ public class Portugolv3Parser extends Parser {
             }
             switch (alt20) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:12: expr ( ',' expr )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:12: expr ( ',' expr )*
                     {
                     pushFollow(FOLLOW_expr_in_chamadaFuncao837);
                     expr87=expr();
@@ -2618,7 +2619,7 @@ public class Portugolv3Parser extends Parser {
                     state._fsp--;
 
                     stream_expr.add(expr87.getTree());
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:17: ( ',' expr )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:17: ( ',' expr )*
                     loop19:
                     do {
                         int alt19=2;
@@ -2631,7 +2632,7 @@ public class Portugolv3Parser extends Parser {
 
                         switch (alt19) {
                     	case 1 :
-                    	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:18: ',' expr
+                    	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:18: ',' expr
                     	    {
                     	    char_literal88=(Token)match(input,38,FOLLOW_38_in_chamadaFuncao840);  
                     	    stream_38.add(char_literal88);
@@ -2663,7 +2664,7 @@ public class Portugolv3Parser extends Parser {
 
 
             // AST REWRITE
-            // elements: ID, expr, expr
+            // elements: expr, expr, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2673,23 +2674,23 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 154:35: -> ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? )
+            // 156:35: -> ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:38: ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:38: ^( CHAMADAFUNCAO ID ( ^( LISTAPARAMETROS expr ( expr )* ) )? )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(CHAMADAFUNCAO, "CHAMADAFUNCAO"), root_1);
 
                 adaptor.addChild(root_1, stream_ID.nextNode());
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:57: ( ^( LISTAPARAMETROS expr ( expr )* ) )?
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:57: ( ^( LISTAPARAMETROS expr ( expr )* ) )?
                 if ( stream_expr.hasNext()||stream_expr.hasNext() ) {
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:57: ^( LISTAPARAMETROS expr ( expr )* )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:57: ^( LISTAPARAMETROS expr ( expr )* )
                     {
                     CommonTree root_2 = (CommonTree)adaptor.nil();
                     root_2 = (CommonTree)adaptor.becomeRoot((CommonTree)adaptor.create(LISTAPARAMETROS, "LISTAPARAMETROS"), root_2);
 
                     adaptor.addChild(root_2, stream_expr.nextTree());
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:154:80: ( expr )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:156:80: ( expr )*
                     while ( stream_expr.hasNext() ) {
                         adaptor.addChild(root_2, stream_expr.nextTree());
 
@@ -2735,7 +2736,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comando_atribuicao"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:158:1: comando_atribuicao : ID '=' exprBooleana ';' -> ^( '=' ID exprBooleana ) ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:160:1: comando_atribuicao : ID '=' exprBooleana ';' -> ^( '=' ID exprBooleana ) ;
     public final Portugolv3Parser.comando_atribuicao_return comando_atribuicao() throws RecognitionException {
         Portugolv3Parser.comando_atribuicao_return retval = new Portugolv3Parser.comando_atribuicao_return();
         retval.start = input.LT(1);
@@ -2756,8 +2757,8 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
         RewriteRuleSubtreeStream stream_exprBooleana=new RewriteRuleSubtreeStream(adaptor,"rule exprBooleana");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:159:2: ( ID '=' exprBooleana ';' -> ^( '=' ID exprBooleana ) )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:159:4: ID '=' exprBooleana ';'
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:161:2: ( ID '=' exprBooleana ';' -> ^( '=' ID exprBooleana ) )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:161:4: ID '=' exprBooleana ';'
             {
             ID91=(Token)match(input,ID,FOLLOW_ID_in_comando_atribuicao883);  
             stream_ID.add(ID91);
@@ -2787,9 +2788,9 @@ public class Portugolv3Parser extends Parser {
             RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
             root_0 = (CommonTree)adaptor.nil();
-            // 159:28: -> ^( '=' ID exprBooleana )
+            // 161:28: -> ^( '=' ID exprBooleana )
             {
-                // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:159:31: ^( '=' ID exprBooleana )
+                // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:161:31: ^( '=' ID exprBooleana )
                 {
                 CommonTree root_1 = (CommonTree)adaptor.nil();
                 root_1 = (CommonTree)adaptor.becomeRoot(stream_44.nextNode(), root_1);
@@ -2829,7 +2830,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "exprBooleana"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:1: exprBooleana : (a= exprAnd ) ( '||' b= exprAnd )* ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:1: exprBooleana : (a= exprAnd ) ( '||' b= exprAnd )* ;
     public final Portugolv3Parser.exprBooleana_return exprBooleana() throws RecognitionException {
         Portugolv3Parser.exprBooleana_return retval = new Portugolv3Parser.exprBooleana_return();
         retval.start = input.LT(1);
@@ -2845,13 +2846,13 @@ public class Portugolv3Parser extends Parser {
         CommonTree string_literal95_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:14: ( (a= exprAnd ) ( '||' b= exprAnd )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:16: (a= exprAnd ) ( '||' b= exprAnd )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:14: ( (a= exprAnd ) ( '||' b= exprAnd )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:16: (a= exprAnd ) ( '||' b= exprAnd )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:16: (a= exprAnd )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:17: a= exprAnd
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:16: (a= exprAnd )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:17: a= exprAnd
             {
             pushFollow(FOLLOW_exprAnd_in_exprBooleana915);
             a=exprAnd();
@@ -2862,7 +2863,7 @@ public class Portugolv3Parser extends Parser {
 
             }
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:28: ( '||' b= exprAnd )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:28: ( '||' b= exprAnd )*
             loop21:
             do {
                 int alt21=2;
@@ -2875,7 +2876,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt21) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:163:29: '||' b= exprAnd
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:165:29: '||' b= exprAnd
             	    {
             	    string_literal95=(Token)match(input,46,FOLLOW_46_in_exprBooleana919); 
             	    string_literal95_tree = (CommonTree)adaptor.create(string_literal95);
@@ -2923,7 +2924,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "exprAnd"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:1: exprAnd : ( comparacao ) ( '&&' comparacao )* ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:1: exprAnd : ( comparacao ) ( '&&' comparacao )* ;
     public final Portugolv3Parser.exprAnd_return exprAnd() throws RecognitionException {
         Portugolv3Parser.exprAnd_return retval = new Portugolv3Parser.exprAnd_return();
         retval.start = input.LT(1);
@@ -2939,13 +2940,13 @@ public class Portugolv3Parser extends Parser {
         CommonTree string_literal97_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:9: ( ( comparacao ) ( '&&' comparacao )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:11: ( comparacao ) ( '&&' comparacao )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:9: ( ( comparacao ) ( '&&' comparacao )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:11: ( comparacao ) ( '&&' comparacao )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:11: ( comparacao )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:12: comparacao
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:11: ( comparacao )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:12: comparacao
             {
             pushFollow(FOLLOW_comparacao_in_exprAnd940);
             comparacao96=comparacao();
@@ -2956,7 +2957,7 @@ public class Portugolv3Parser extends Parser {
 
             }
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:24: ( '&&' comparacao )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:24: ( '&&' comparacao )*
             loop22:
             do {
                 int alt22=2;
@@ -2969,7 +2970,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt22) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:167:25: '&&' comparacao
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:169:25: '&&' comparacao
             	    {
             	    string_literal97=(Token)match(input,47,FOLLOW_47_in_exprAnd944); 
             	    string_literal97_tree = (CommonTree)adaptor.create(string_literal97);
@@ -3017,7 +3018,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "comparacao"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:1: comparacao : ( rel ) ( '==' rel | '!=' rel )* ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:1: comparacao : ( rel ) ( '==' rel | '!=' rel )* ;
     public final Portugolv3Parser.comparacao_return comparacao() throws RecognitionException {
         Portugolv3Parser.comparacao_return retval = new Portugolv3Parser.comparacao_return();
         retval.start = input.LT(1);
@@ -3037,13 +3038,13 @@ public class Portugolv3Parser extends Parser {
         CommonTree string_literal102_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:11: ( ( rel ) ( '==' rel | '!=' rel )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:13: ( rel ) ( '==' rel | '!=' rel )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:11: ( ( rel ) ( '==' rel | '!=' rel )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:13: ( rel ) ( '==' rel | '!=' rel )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:13: ( rel )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:14: rel
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:13: ( rel )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:14: rel
             {
             pushFollow(FOLLOW_rel_in_comparacao962);
             rel99=rel();
@@ -3054,7 +3055,7 @@ public class Portugolv3Parser extends Parser {
 
             }
 
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:19: ( '==' rel | '!=' rel )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:19: ( '==' rel | '!=' rel )*
             loop23:
             do {
                 int alt23=3;
@@ -3070,7 +3071,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt23) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:20: '==' rel
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:20: '==' rel
             	    {
             	    string_literal100=(Token)match(input,48,FOLLOW_48_in_comparacao966); 
             	    string_literal100_tree = (CommonTree)adaptor.create(string_literal100);
@@ -3086,7 +3087,7 @@ public class Portugolv3Parser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:171:32: '!=' rel
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:173:32: '!=' rel
             	    {
             	    string_literal102=(Token)match(input,49,FOLLOW_49_in_comparacao973); 
             	    string_literal102_tree = (CommonTree)adaptor.create(string_literal102);
@@ -3134,7 +3135,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "rel"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:1: rel : expr ( ( '>' | '<' | '>=' | '<=' ) expr )? ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:1: rel : expr ( ( '>' | '<' | '>=' | '<=' ) expr )? ;
     public final Portugolv3Parser.rel_return rel() throws RecognitionException {
         Portugolv3Parser.rel_return retval = new Portugolv3Parser.rel_return();
         retval.start = input.LT(1);
@@ -3156,8 +3157,8 @@ public class Portugolv3Parser extends Parser {
         CommonTree string_literal108_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:5: ( expr ( ( '>' | '<' | '>=' | '<=' ) expr )? )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:7: expr ( ( '>' | '<' | '>=' | '<=' ) expr )?
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:5: ( expr ( ( '>' | '<' | '>=' | '<=' ) expr )? )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:7: expr ( ( '>' | '<' | '>=' | '<=' ) expr )?
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -3167,7 +3168,7 @@ public class Portugolv3Parser extends Parser {
             state._fsp--;
 
             adaptor.addChild(root_0, expr104.getTree());
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:12: ( ( '>' | '<' | '>=' | '<=' ) expr )?
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:12: ( ( '>' | '<' | '>=' | '<=' ) expr )?
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -3176,9 +3177,9 @@ public class Portugolv3Parser extends Parser {
             }
             switch (alt25) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:13: ( '>' | '<' | '>=' | '<=' ) expr
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:13: ( '>' | '<' | '>=' | '<=' ) expr
                     {
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:13: ( '>' | '<' | '>=' | '<=' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:13: ( '>' | '<' | '>=' | '<=' )
                     int alt24=4;
                     switch ( input.LA(1) ) {
                     case 50:
@@ -3210,7 +3211,7 @@ public class Portugolv3Parser extends Parser {
 
                     switch (alt24) {
                         case 1 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:14: '>'
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:14: '>'
                             {
                             char_literal105=(Token)match(input,50,FOLLOW_50_in_rel995); 
                             char_literal105_tree = (CommonTree)adaptor.create(char_literal105);
@@ -3220,7 +3221,7 @@ public class Portugolv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:19: '<'
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:19: '<'
                             {
                             char_literal106=(Token)match(input,51,FOLLOW_51_in_rel998); 
                             char_literal106_tree = (CommonTree)adaptor.create(char_literal106);
@@ -3230,7 +3231,7 @@ public class Portugolv3Parser extends Parser {
                             }
                             break;
                         case 3 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:24: '>='
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:24: '>='
                             {
                             string_literal107=(Token)match(input,52,FOLLOW_52_in_rel1001); 
                             string_literal107_tree = (CommonTree)adaptor.create(string_literal107);
@@ -3240,7 +3241,7 @@ public class Portugolv3Parser extends Parser {
                             }
                             break;
                         case 4 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:175:30: '<='
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:177:30: '<='
                             {
                             string_literal108=(Token)match(input,53,FOLLOW_53_in_rel1004); 
                             string_literal108_tree = (CommonTree)adaptor.create(string_literal108);
@@ -3291,7 +3292,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "expr"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:179:1: expr : termo ( '+' termo | '-' termo )* ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:181:1: expr : termo ( '+' termo | '-' termo )* ;
     public final Portugolv3Parser.expr_return expr() throws RecognitionException {
         Portugolv3Parser.expr_return retval = new Portugolv3Parser.expr_return();
         retval.start = input.LT(1);
@@ -3311,8 +3312,8 @@ public class Portugolv3Parser extends Parser {
         CommonTree char_literal113_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:179:6: ( termo ( '+' termo | '-' termo )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:179:8: termo ( '+' termo | '-' termo )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:181:6: ( termo ( '+' termo | '-' termo )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:181:8: termo ( '+' termo | '-' termo )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -3322,7 +3323,7 @@ public class Portugolv3Parser extends Parser {
             state._fsp--;
 
             adaptor.addChild(root_0, termo110.getTree());
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:179:14: ( '+' termo | '-' termo )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:181:14: ( '+' termo | '-' termo )*
             loop26:
             do {
                 int alt26=3;
@@ -3338,7 +3339,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt26) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:179:15: '+' termo
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:181:15: '+' termo
             	    {
             	    char_literal111=(Token)match(input,54,FOLLOW_54_in_expr1025); 
             	    char_literal111_tree = (CommonTree)adaptor.create(char_literal111);
@@ -3354,7 +3355,7 @@ public class Portugolv3Parser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:179:28: '-' termo
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:181:28: '-' termo
             	    {
             	    char_literal113=(Token)match(input,55,FOLLOW_55_in_expr1032); 
             	    char_literal113_tree = (CommonTree)adaptor.create(char_literal113);
@@ -3402,7 +3403,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "termo"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:183:1: termo : unario ( '*' unario | '/' unario )* ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:185:1: termo : unario ( '*' unario | '/' unario )* ;
     public final Portugolv3Parser.termo_return termo() throws RecognitionException {
         Portugolv3Parser.termo_return retval = new Portugolv3Parser.termo_return();
         retval.start = input.LT(1);
@@ -3422,8 +3423,8 @@ public class Portugolv3Parser extends Parser {
         CommonTree char_literal118_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:183:7: ( unario ( '*' unario | '/' unario )* )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:183:9: unario ( '*' unario | '/' unario )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:185:7: ( unario ( '*' unario | '/' unario )* )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:185:9: unario ( '*' unario | '/' unario )*
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -3433,7 +3434,7 @@ public class Portugolv3Parser extends Parser {
             state._fsp--;
 
             adaptor.addChild(root_0, unario115.getTree());
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:183:17: ( '*' unario | '/' unario )*
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:185:17: ( '*' unario | '/' unario )*
             loop27:
             do {
                 int alt27=3;
@@ -3449,7 +3450,7 @@ public class Portugolv3Parser extends Parser {
 
                 switch (alt27) {
             	case 1 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:183:18: '*' unario
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:185:18: '*' unario
             	    {
             	    char_literal116=(Token)match(input,56,FOLLOW_56_in_termo1059); 
             	    char_literal116_tree = (CommonTree)adaptor.create(char_literal116);
@@ -3465,7 +3466,7 @@ public class Portugolv3Parser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:183:32: '/' unario
+            	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:185:32: '/' unario
             	    {
             	    char_literal118=(Token)match(input,57,FOLLOW_57_in_termo1066); 
             	    char_literal118_tree = (CommonTree)adaptor.create(char_literal118);
@@ -3513,7 +3514,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "unario"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:186:1: unario : ( ( '!' | '-' ) unario | fator ( '^' fator )* | chamadaFuncao );
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:188:1: unario : ( ( '!' | '-' ) unario | fator ( '^' fator )* | chamadaFuncao );
     public final Portugolv3Parser.unario_return unario() throws RecognitionException {
         Portugolv3Parser.unario_return retval = new Portugolv3Parser.unario_return();
         retval.start = input.LT(1);
@@ -3537,7 +3538,7 @@ public class Portugolv3Parser extends Parser {
         CommonTree char_literal124_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:187:6: ( ( '!' | '-' ) unario | fator ( '^' fator )* | chamadaFuncao )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:189:6: ( ( '!' | '-' ) unario | fator ( '^' fator )* | chamadaFuncao )
             int alt30=3;
             switch ( input.LA(1) ) {
             case 55:
@@ -3582,11 +3583,11 @@ public class Portugolv3Parser extends Parser {
 
             switch (alt30) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:187:7: ( '!' | '-' ) unario
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:189:7: ( '!' | '-' ) unario
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:187:7: ( '!' | '-' )
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:189:7: ( '!' | '-' )
                     int alt28=2;
                     int LA28_0 = input.LA(1);
 
@@ -3604,7 +3605,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     switch (alt28) {
                         case 1 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:187:8: '!'
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:189:8: '!'
                             {
                             char_literal120=(Token)match(input,58,FOLLOW_58_in_unario1091); 
                             char_literal120_tree = (CommonTree)adaptor.create(char_literal120);
@@ -3614,7 +3615,7 @@ public class Portugolv3Parser extends Parser {
                             }
                             break;
                         case 2 :
-                            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:187:13: '-'
+                            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:189:13: '-'
                             {
                             char_literal121=(Token)match(input,55,FOLLOW_55_in_unario1094); 
                             char_literal121_tree = (CommonTree)adaptor.create(char_literal121);
@@ -3636,7 +3637,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:188:7: fator ( '^' fator )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:190:7: fator ( '^' fator )*
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3646,7 +3647,7 @@ public class Portugolv3Parser extends Parser {
                     state._fsp--;
 
                     adaptor.addChild(root_0, fator123.getTree());
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:188:13: ( '^' fator )*
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:190:13: ( '^' fator )*
                     loop29:
                     do {
                         int alt29=2;
@@ -3659,7 +3660,7 @@ public class Portugolv3Parser extends Parser {
 
                         switch (alt29) {
                     	case 1 :
-                    	    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:188:14: '^' fator
+                    	    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:190:14: '^' fator
                     	    {
                     	    char_literal124=(Token)match(input,59,FOLLOW_59_in_unario1109); 
                     	    char_literal124_tree = (CommonTree)adaptor.create(char_literal124);
@@ -3684,7 +3685,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:189:7: chamadaFuncao
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:191:7: chamadaFuncao
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3723,7 +3724,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "fator"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:191:1: fator : ( INT | ID | string | '(' exprBooleana ')' -> exprBooleana | 'true' | 'false' );
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:193:1: fator : ( INT | ID | string | '(' exprBooleana ')' -> exprBooleana | 'true' | 'false' );
     public final Portugolv3Parser.fator_return fator() throws RecognitionException {
         Portugolv3Parser.fator_return retval = new Portugolv3Parser.fator_return();
         retval.start = input.LT(1);
@@ -3751,7 +3752,7 @@ public class Portugolv3Parser extends Parser {
         RewriteRuleTokenStream stream_40=new RewriteRuleTokenStream(adaptor,"token 40");
         RewriteRuleSubtreeStream stream_exprBooleana=new RewriteRuleSubtreeStream(adaptor,"rule exprBooleana");
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:192:5: ( INT | ID | string | '(' exprBooleana ')' -> exprBooleana | 'true' | 'false' )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:194:5: ( INT | ID | string | '(' exprBooleana ')' -> exprBooleana | 'true' | 'false' )
             int alt31=6;
             switch ( input.LA(1) ) {
             case INT:
@@ -3793,7 +3794,7 @@ public class Portugolv3Parser extends Parser {
 
             switch (alt31) {
                 case 1 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:192:9: INT
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:194:9: INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3805,7 +3806,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 2 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:193:9: ID
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:195:9: ID
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3817,7 +3818,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 3 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:194:7: string
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:196:7: string
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3831,7 +3832,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 4 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:195:9: '(' exprBooleana ')'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:197:9: '(' exprBooleana ')'
                     {
                     char_literal130=(Token)match(input,40,FOLLOW_40_in_fator1166);  
                     stream_40.add(char_literal130);
@@ -3858,7 +3859,7 @@ public class Portugolv3Parser extends Parser {
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
-                    // 195:30: -> exprBooleana
+                    // 197:30: -> exprBooleana
                     {
                         adaptor.addChild(root_0, stream_exprBooleana.nextTree());
 
@@ -3868,7 +3869,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 5 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:196:7: 'true'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:198:7: 'true'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3880,7 +3881,7 @@ public class Portugolv3Parser extends Parser {
                     }
                     break;
                 case 6 :
-                    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:197:7: 'false'
+                    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:199:7: 'false'
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3917,7 +3918,7 @@ public class Portugolv3Parser extends Parser {
     };
 
     // $ANTLR start "string"
-    // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:200:1: string : STRING ;
+    // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:202:1: string : STRING ;
     public final Portugolv3Parser.string_return string() throws RecognitionException {
         Portugolv3Parser.string_return retval = new Portugolv3Parser.string_return();
         retval.start = input.LT(1);
@@ -3929,8 +3930,8 @@ public class Portugolv3Parser extends Parser {
         CommonTree STRING135_tree=null;
 
         try {
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:200:8: ( STRING )
-            // /Users/lailson/Documents/UFPI/Compilador/gramatica/Portugolv3.g:200:9: STRING
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:202:8: ( STRING )
+            // /Volumes/Lailson HD/Users/lailson/NetBeansProjects/Compilador/src/gramatica/Portugolv3.g:202:9: STRING
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -4019,7 +4020,7 @@ public class Portugolv3Parser extends Parser {
             this.transition = DFA11_transition;
         }
         public String getDescription() {
-            return "106:1: comandos : ( comando_se_senao -> comando_se_senao | comando_para -> comando_para | comando_imprimir -> comando_imprimir | comando_ler -> comando_ler | comando_enquanto -> comando_enquanto | 'SAIR' ';' -> 'SAIR' | chamadaFuncao ';' -> chamadaFuncao | comando_atribuicao -> comando_atribuicao );";
+            return "108:1: comandos : ( comando_se_senao -> comando_se_senao | comando_para -> comando_para | comando_imprimir -> comando_imprimir | comando_ler -> comando_ler | comando_enquanto -> comando_enquanto | 'SAIR' ';' -> 'SAIR' | chamadaFuncao ';' -> chamadaFuncao | comando_atribuicao -> comando_atribuicao );";
         }
     }
  

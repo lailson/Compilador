@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.LayoutManager;
 import java.awt.Insets;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -50,6 +51,8 @@ import javax.swing.text.TabStop;
 import com.anlugifa.editor.base.GroovyFilter;
 import com.anlugifa.editor.base.MyUndoableListener;
 import com.anlugifa.editor.xml.StyleManager;
+import java.awt.Color;
+import javax.swing.JTextField;
 
 public class JEditor extends JFrame
 {
@@ -74,6 +77,7 @@ public class JEditor extends JFrame
     private boolean changed = false;
 
     private JPanel pnlText = null;
+    private JConsole console = null;
     private JStatusPanel pnlStatus = null;
 
     private static JEditor myInstance = null;
@@ -98,7 +102,7 @@ public class JEditor extends JFrame
             if (hasChanged())
             {
                 int result = JOptionPane.showConfirmDialog(JEditor.this,
-                        "Would you like to save file ?", "Closing...",
+                        "Voce gostaria de salvar esse arquivo ?", "Fechando...",
                         JOptionPane.YES_NO_OPTION);
 
                 if (result == JOptionPane.OK_OPTION)
@@ -141,14 +145,16 @@ public class JEditor extends JFrame
      */
     private void initialize()
     {
-        this.setSize(new Dimension(600, 600));
+        this.setSize(new Dimension(1280, 800));
         this.setJMenuBar(getMnuBar());
         this.setLayout(new BorderLayout());
         this.add(BorderLayout.NORTH, createToolbar());
         this.add(BorderLayout.CENTER, getPnlText());
+        this.add(BorderLayout.SOUTH, createConsole());
         this.setTitle("IDE Compilador - Novo arquivo");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.addWindowListener(new MyWindowListener());
+        
     }
 
     private void centralize()
@@ -165,6 +171,18 @@ public class JEditor extends JFrame
         cmp.setLocation(getX() + ((getWidth()  - cmp.getWidth())  / 2), 
                         getY() + ((getHeight() - cmp.getHeight()) / 2));
 
+    }
+    
+    private Component createConsole(){
+        if (console == null)
+        {
+            console = new JConsole();
+            console.setVisible(true);
+            console.getConsole().setEditable(false);
+            console.getConsole().setText("Inicio: ");
+            
+        }
+        return console;
     }
     
     /**

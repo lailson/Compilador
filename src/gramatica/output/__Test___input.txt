@@ -1,0 +1,78 @@
+PROGRAMA teste;
+	//Declaracao de variaveis
+	INTEIRO a,b;
+	STRING c;
+	INTEIRO a,d;
+	
+	//Declaracao de Funcoes
+	FUNCAO funcao1 (a:INTEIRO, b:STRING) : VOID;
+		INTEIRO var1Teste1;
+		STRING var2Teste2;
+		IMPRIMA("OI", "TCHAU", "Hi");
+		LEIA(a,b,c);
+	FIM;
+	
+	FUNCAO funcao2 (a:INTEIRO, b:STRING, c:BOOLEANO) : VOID;
+		INTEIRO var1Teste1;
+		STRING var2Teste2;
+		IMPRIMA("OI", "TCHAU", "Hi");
+		LEIA(a,b,c);
+	FIM;
+	FUNCAO funcao3 () : VOID;
+		INTEIRO var1Teste1;
+		STRING var2Teste2;
+		IMPRIMA("OI", "TCHAU", "Hi");
+		LEIA(a,b,c);
+	FIM;
+
+	/*Corpo do programa*/
+	LEIA(a);
+	
+	IMPRIMA(a+b, "100");
+	SE(a>b) 
+		b=10;
+		c=50;
+		d=40;
+	SENAO
+		b=20;
+		c=30;
+		d=10;
+	FIM;
+	SE(a==b)
+		IMPRIMA("a==b");
+	FIM;
+
+	PARA (i=1 ATE 10)
+		LEIA(a,b);
+		IMPRIMA(a,b);
+	FIM;
+
+	PARA (i=1 ATE i<=10)
+		LEIA(a,b);
+		IMPRIMA(a,b);
+	FIM;
+
+	PARA (i=1 ATE 10 PASSO 2)
+		LEIA(a,b);
+		IMPRIMA(a,b);
+	FIM;
+
+	ENQUANTO (a>b && c==10)
+		SE (a>b)
+			b=b+1;
+		SENAO
+			c=c-1;
+		FIM;
+			
+	FIM;
+
+	funcao1();
+	funcao2(5);
+	funcao2(5,3,4);
+	funcao3(funcao1());
+	funcao4(4+3);
+	funcao5(4+5,3*2);
+	funcao7(4+funcao2(3,5));
+	IMPRIMA("ok");
+	
+FIM .
